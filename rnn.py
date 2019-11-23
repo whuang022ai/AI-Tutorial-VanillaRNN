@@ -67,10 +67,6 @@ class RNN():
             (self.hidden_layer_size, self.hidden_layer_size))
         self.V = np.random.random(
             (self.output_layer_size, self.hidden_layer_size))
-        self.H_bias = np.random.random(
-            (self.hidden_layer_size, 1))
-        self.O_bias = np.random.random(
-            (self.hidden_layer_size, 1))
         self.sigmoid_vec = np.vectorize(self.sigmoid)
         self.sigmoid_div_vec = np.vectorize(self.sigmoid_div)
         self.lr = learing_rate
